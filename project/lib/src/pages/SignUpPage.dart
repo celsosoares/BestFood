@@ -136,9 +136,9 @@ class _SignUpPageState extends State<SignUpPage> {
             children: <Widget>[
               Container(
                 child: 
-                  new Image.asset("assets/images/logo.png"),
-                  height: 100,
-                  width: 100,
+                  new Image.asset("assets/images/logo_laranja.jpg"),
+                  height: 190,
+                  width: 190,
               ),
               SizedBox(
                 height: 20.0,
@@ -207,6 +207,8 @@ class _SignUpPageState extends State<SignUpPage> {
                   color: Colors.orange,
                 ),
                 child: RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0)),
                   child: Text(
                     "Próximo",
                     style: TextStyle(
@@ -217,6 +219,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   ),
                   color: Colors.orange,
                   elevation: 5.0,
+                  padding: EdgeInsets.fromLTRB(75.0, 0.0, 75.0, 0.0),
                   onPressed: (){
                     Navigator.push(
                       context,

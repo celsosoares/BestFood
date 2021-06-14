@@ -75,11 +75,9 @@ class _GenderPageState extends State<GenderPage> {
               ),
               Container(
                 height: 50.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(35.0),
-                  color: Colors.orange,
-                ),
                 child: RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0)),
                   child: Text(
                     "Próximo",
                     style: TextStyle(
@@ -90,6 +88,7 @@ class _GenderPageState extends State<GenderPage> {
                   ),
                   color: Colors.orange,
                   elevation: 5.0,
+                  padding: EdgeInsets.fromLTRB(75.0, 0.0, 75.0, 0.0),
                   onPressed: (){
                     Navigator.push(
                       context,

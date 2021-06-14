@@ -64,43 +64,10 @@ class _BoughtFoodState extends State<BoughtFood> {
                         fontSize: 18.0,
                         fontWeight: FontWeight.bold,
 
-                        ),
-                    ),
-                    Row(
-                      children: <Widget>[
-                        Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
-                        Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
-                        Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
-                        Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
-                        Icon(Icons.star,color: Theme.of(context).primaryColor,size: 16.0,),
-                        SizedBox(width: 20.0,),
-                        Text(
-                          "(${widget.ratings} Review )",
-                          style: TextStyle(color:Colors.grey),
-                        ),
-
-                      ],
-                    ),
-                    
+                      ),
+                    ),            
                   ],
                 ),
-                Column(
-               
-                      children: <Widget>[
-                        Text(
-                          "${widget.price}",
-                          style: TextStyle(fontWeight: FontWeight.bold,
-                          color: Colors.yellowAccent,
-                          fontSize: 18.0
-                          ),
-                        ),
-                        Text(
-                          "Min Order",
-                          style: TextStyle(color: Colors.grey),
-                        ),
-                      ],
-
-                    ),
               ],
             ),
           ),

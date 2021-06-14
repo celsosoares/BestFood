@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:aprendizado/src/widget/foodCard.dart';
+import 'package:project/src/widget/foodCard.dart';
 
 import '../data/categoryData.dart';
 import '../models/categoryModel.dart';

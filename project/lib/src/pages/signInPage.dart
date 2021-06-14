@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project/src/pages/RecoveryPwdPage.dart';
+import 'package:project/src/pages/HomePage.dart';
+
 
 class SignInPage extends StatefulWidget {
   @override
@@ -63,9 +65,9 @@ class _SignInPageState extends State<SignInPage> {
             children: <Widget>[
               Container(
                 child: 
-                  new Image.asset("assets/images/logo.png"),
-                  height: 100,
-                  width: 100,
+                  new Image.asset("assets/images/logo_laranja.jpg"),
+                  height: 190,
+                  width: 190,
               ),
               SizedBox(
                 height: 20.0,
@@ -118,11 +120,9 @@ class _SignInPageState extends State<SignInPage> {
               ),
               Container(
                 height: 50.0,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(35.0),
-                  color: Colors.orange,
-                ),
                 child: RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0)),
                   child: Text(
                     "Login",
                     style: TextStyle(
@@ -133,10 +133,11 @@ class _SignInPageState extends State<SignInPage> {
                   ),
                   color: Colors.orange,
                   elevation: 5.0,
+                  padding: EdgeInsets.fromLTRB(75.0, 0.0, 75.0, 0.0),
                   onPressed: (){
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => SignInPage()),
+                      MaterialPageRoute(builder: (context) => HomePage()),
                     );
                   },
                 ),
