@@ -19,19 +19,10 @@ class HomeTopWidget extends StatelessWidget
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Text(
-                      "What Would ",
+                      "Receitas para você ",
                       style: textstyle,
                     ),
-                    Text(
-                      "you like to eat ?",
-                      style: textstyle,
-                      
-                      ),
                   ],
-                ),
-                IconButton(
-                  icon: Icon(Icons.notifications_none,size: 30.0,color: Theme.of(context).primaryColor,),
-                  onPressed: (){},
                 ),
               ],
             ),

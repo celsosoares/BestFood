@@ -115,6 +115,8 @@ class _DietPageState extends State<DietPage> {
                   color: Colors.orange,
                 ),
                 child: RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(18.0)),
                   child: Text(
                     "Próximo",
                     style: TextStyle(
@@ -125,6 +127,7 @@ class _DietPageState extends State<DietPage> {
                   ),
                   color: Colors.orange,
                   elevation: 5.0,
+                  padding: EdgeInsets.fromLTRB(75.0, 0.0, 75.0, 0.0),
                   onPressed: (){
                     Navigator.push(
                       context,

@@ -9,7 +9,7 @@ class SearchBar extends StatelessWidget{
 
       child: TextField(
         decoration: InputDecoration(
-          hintText: "Search any food",
+          hintText: "Buscar",
           suffixIcon: Material(
             elevation: 5.0,
             borderRadius: BorderRadius.circular(30.0),

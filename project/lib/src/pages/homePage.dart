@@ -17,15 +17,22 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        leading: new IconButton(
+          icon: new Icon(Icons.arrow_back),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+        backgroundColor: Colors.white,
+      ),
       body: ListView(
         padding: EdgeInsets.only(left: 20.0, top: 50.0, right: 20.0),
         children: <Widget>[ 
           HomeTopWidget(),
-          FoodCategory(),
-          SizedBox(
+           SizedBox(
             height: 15.0,
           ),
           SearchBar(),
+          FoodCategory(),
           SizedBox(
             height: 15.0,
           ),
@@ -33,7 +40,7 @@ class _HomePageState extends State<HomePage> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               Text(
-                "Frequently Bought Food",
+                "Receitas rápidas",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18.0),
               ),
               GestureDetector(
@@ -56,6 +63,23 @@ class _HomePageState extends State<HomePage> {
           )
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+				currentIndex: 0,
+        items: [
+          BottomNavigationBarItem(
+              icon: Icon(Icons.house),
+              title: Text("Home")
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.person),
+              title: Text("Meu perfil")
+          ),
+          BottomNavigationBarItem(
+              icon: Icon(Icons.timer),
+              title: Text("Recentes")
+          ),
+        ],
+      ),
     );
   }
 
@@ -66,9 +90,9 @@ class _HomePageState extends State<HomePage> {
         imagePath: food.imagePath,
         id: food.id,
         name: food.name,
-        price: food.price,
-        discount: food.discount,
-        ratings: food.ratings,
+        //price: food.price,
+        //discount: food.discount,
+        //ratings: food.ratings,
         category: food.category,
       ),
     );

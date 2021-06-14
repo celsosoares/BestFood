@@ -1,4 +1,4 @@
-import 'package:aprendizado/src/models/foodModel.dart';
+import 'package:project/src/models/foodModel.dart';
 
 final foods =[
   FoodData(

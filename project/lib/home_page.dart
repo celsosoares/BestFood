@@ -14,33 +14,10 @@ class HomePageState extends State<HomePage>{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*appBar: AppBar(
-        title: Text("Barra superior")
-      ),*/
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            /*Text(
-              'Contador: $counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
-            SizedBox(height: 25,),
-            RaisedButton(
-              child: Text(
-                'Incrementar',
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.white,
-                ),
-              ),
-              onPressed: (){
-                setState(() {
-                  counter++;
-                });
-              },
-              color: Theme.of(context).primaryColor,
-            ),*/
             FlatButton(
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(18.0),
