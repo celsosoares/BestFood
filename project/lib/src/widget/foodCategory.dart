@@ -1,9 +1,12 @@
+import 'package:project/src/widget/menuCard.dart';
 import 'package:flutter/material.dart';
 import 'package:project/src/widget/foodCard.dart';
 
-import '../data/categoryData.dart';
+//import '../data/categoryData.dart';
+import '../data/categoryMenuModel.dart';
 import '../models/categoryModel.dart';
 import 'foodCard.dart';
+import 'menuCard.dart';
 
 
 class FoodCategory extends StatelessWidget{
@@ -18,12 +21,11 @@ class FoodCategory extends StatelessWidget{
         itemCount: _categories.length,
         itemBuilder: (BuildContext context ,int index )
         {
-          return FoodCard(
-            categoryName: _categories[index].categoryName,
-            imagePath: _categories[index].imagePath,
-            noOfItem: _categories[index].noOfItem,
-            
-          );
+          //return FoodCard(
+          //  categoryName: _categories[index].categoryName,
+          //  imagePath: _categories[index].imagePath,
+          //  noOfItem: _categories[index].noOfItem,
+          return MenuCard( _categories[index].categoryName);
         },
       ),
     );

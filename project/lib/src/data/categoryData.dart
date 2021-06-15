@@ -1,4 +1,4 @@
-import '../models/categoryModel.dart';
+/*import '../models/categoryModel.dart';
 
 final categories =[
 Category(
@@ -23,4 +23,4 @@ Category(
   imagePath: "assets/images/beer.jpeg",
   noOfItem: 64,
 ),
-];
+];*/
